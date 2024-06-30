@@ -10,6 +10,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -351,7 +352,7 @@ body {
 
 .trainer-card-container .card img {
   border-radius: 0;
-  height: 300px;
+  height: 45vh;
   object-fit: cover;
   object-position: top;
 }
@@ -397,6 +398,147 @@ body {
   background-color: #18de18;
   color: #fff;
   transition: 0.3s ease-in-out;
+}
+
+/* price section */
+
+.pricing {
+  min-height: 100vh;
+  background-color: #212121;
+  padding: 4rem 0;
+}
+
+.pricing .title {
+  color: #18de18;
+}
+
+.nav-pills {
+  background-color: #fff;
+  width: max-content;
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+.nav-pills .nav-link {
+  margin: 0 0.5rem;
+  border-radius: 0;
+  color: var(--primary);
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.pricing .card {
+  background-color: #000;
+  padding: 2rem 2.5rem;
+  box-sizing: border-box;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.pricing .card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  background-color: #18de18;
+}
+
+.pricing .card h5 {
+  color: #07ce07;
+}
+
+.pricing .card:hover h5 {
+  color: #fff;
+}
+
+.pricing .card:hover .btn-primary {
+  background-color: #fff;
+  color: var(--primary);
+}
+
+.pricing .card h3 {
+  font-size: 3rem;
+}
+.pricing .card .small {
+  color: #e8e8e8;
+}
+
+.pricing .card li {
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.pricing .card li i {
+  font-size: 1.1rem;
+}
+
+/* testimonial */
+
+.testimonial {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.testimonial .title {
+  color: #18de18;
+}
+
+.carousel-item {
+  padding: 2rem 8rem;
+  color: #fff;
+}
+
+.carousel-item img {
+  border: 10px double #18de18;
+  padding: 0.5rem;
+}
+
+.carousel-item .name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.carousel-item .small {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.carousel-item .text-content {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.carousel-item .social-media {
+  text-decoration: none;
+  background-color: #fff;
+  color: var(--primary);
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  padding: 0.3rem 0.6rem;
+  font-size: 1.1rem;
+  width: max-content;
+  margin: 0 0.6rem;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-item .social-media:hover {
+  background-color: #18de18;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.carousel button i {
+  font-size: 1rem;
+  background-color: #18de18;
+  height: max-content;
+  width: max-content;
+  border-radius: 50%;
+  padding: 0.7rem;
 }
 
 /* responsive desktop */
