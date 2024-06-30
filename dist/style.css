@@ -1,0 +1,552 @@
+:root {
+  --primary: #333;
+  --second: #18de18;
+  .container-fluid {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary);
+}
+
+.navbar {
+  background-color: #333;
+  transition: 0.3s ease-in;
+}
+
+.navbar.bg-custom {
+  background-color: #212121;
+  transition: 0.3s ease-out;
+}
+
+.navbar-brand {
+  color: var(--second);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+  color: var(--second);
+}
+
+.nav-link {
+  font-size: 0.9rem;
+}
+
+.btn-login {
+  background-color: var(--second);
+  color: #fff;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.btn-login:hover {
+  background-color: #07ce07;
+  color: #fff;
+}
+
+#offcanvasNavbar {
+  background-color: var(--primary);
+}
+
+/* hero section */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #333 30%, #33333300), url(../img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.title span {
+  color: var(--second);
+}
+
+.text {
+  font-size: 0.9rem;
+  color: #d7d7d7;
+}
+
+.btn-primary {
+  background-color: var(--second);
+  color: #fff;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.btn-second {
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0;
+}
+
+.btn-primary:hover {
+  background-color: #07ce07;
+  border: 1px solid transparent;
+}
+
+.btn-second:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* about section */
+.about {
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #212121;
+}
+
+.image-container {
+  background-color: #292929;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 5px 5px 10px 0px #1f1f1f;
+}
+
+.image-container img {
+  width: 60%;
+  filter: brightness(0.8) contrast(1);
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 10px 0px #2f2f2f;
+}
+
+.image-container .img-2 {
+  margin-top: -7rem;
+}
+
+.image-container .img-3 {
+  margin-top: -5rem;
+}
+
+.about h1 {
+  color: var(--second);
+  line-height: 1.3em;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.4rem 0;
+}
+
+.about li {
+  color: #d7d7d7;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.about li i {
+  font-size: 1.3rem;
+}
+
+.about .btn-second {
+  border: 1px solid #18de18;
+  width: 100%;
+}
+
+/* end about section */
+
+/* class section */
+.class {
+  min-height: 100vh;
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.subheading {
+  color: #fff;
+  letter-spacing: 0.4rem;
+}
+
+.class h1 {
+  color: #18de18 !important;
+}
+
+.class .btn-second {
+  border: 2px solid #18de18;
+  padding: 1rem 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-class-container {
+  position: relative;
+  flex-grow: 1;
+  transition: flex-grow 0.3s;
+  width: 25%;
+  flex-basis: 0;
+}
+
+.image-class-container:hover {
+  flex-grow: 2;
+}
+
+.image-class-container img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 1rem 4rem;
+}
+
+.image-class-container:hover .overlay {
+  opacity: 1;
+}
+
+.text-class {
+  text-align: center;
+}
+
+.text-class h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.text-class p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.text-class .btn-primary {
+  width: 60%;
+}
+
+/* end class section */
+
+/* schedule section */
+
+.schedule {
+  min-height: 100vh;
+  background-color: #212121;
+  padding: 4rem 0;
+}
+
+.schedule-table-container {
+  overflow-x: auto;
+}
+
+.schedule h1 {
+  color: #18de18;
+}
+
+.schedule-table {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #444;
+  padding: 20px;
+}
+.schedule-table .time-col {
+  width: 10%;
+}
+
+.schedule-table .day-col {
+  width: 12.857%;
+}
+.schedule-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0.6rem;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+}
+
+.schedule-item h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.schedule-item p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0;
+}
+.fitness {
+  background-color: #ff8c42;
+}
+.nutrition {
+  background-color: #b065d4;
+}
+.physique {
+  background-color: #00b4d8;
+}
+.strength-core {
+  background-color: #52b788;
+}
+/* end schedule section */
+
+/* trainer section */
+
+.trainer {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.trainer .title {
+  color: #18de18;
+}
+
+.trainer-card-container .card {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px 0px #2929292a;
+}
+
+.trainer-card-container .card img {
+  border-radius: 0;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.trainer-card-container .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.trainer-card-container .card-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.trainer-card-container .social-media {
+  text-decoration: none;
+  color: #1f1f1f;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  padding: 0.3rem 0.6rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+.trainer-card-container .card:hover {
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.trainer-card-container .card:hover .card-title {
+  color: #18de18;
+}
+
+.trainer-card-container .card:hover .card-text {
+  color: #333;
+}
+
+.trainer-card-container .card:hover .social-media {
+  background-color: #d4d4d4;
+}
+
+.trainer-card-container .card:hover .social-media:hover {
+  background-color: #18de18;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+/* responsive desktop */
+@media screen and (min-width: 1440px) {
+  .navbar-brand {
+    font-size: 1.7rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .btn-login {
+    font-size: 1rem;
+  }
+
+  /* about section */
+
+  .image-container img {
+    width: 55%;
+  }
+
+  .about li {
+    font-size: 1rem;
+  }
+}
+
+/* responsive tablet landscape */
+
+@media screen and (max-width: 992px) {
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  .navbar-toggler:focus {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .login-container {
+    border-top: 1px solid #fff;
+    padding-top: 1rem;
+  }
+
+  .btn-login {
+    width: 100%;
+  }
+
+  /* about section */
+
+  .image-container img {
+    width: 100%;
+  }
+
+  .image-container .img-2 {
+    margin-top: 2rem;
+  }
+
+  .about h1 {
+    font-size: 2.5rem;
+  }
+
+  /* class section */
+
+  .image-class-container {
+    width: 50%;
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+}
+
+/* responsive mobile landscape */
+@media screen and (max-width: 768px) {
+  /* about section */
+
+  .image-container img {
+    width: 60%;
+  }
+
+  .image-container .img-2 {
+    margin-top: -3rem;
+  }
+
+  /* class section */
+  .class .btn-second {
+    width: 100%;
+  }
+
+  .text-class h3 {
+    font-size: 1.6rem;
+  }
+
+  .text-class p {
+    font-size: 1rem;
+  }
+
+  /* schedule section */
+  .schedule-item {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* responsive mobile */
+@media screen and (max-width: 576px) {
+  .hero {
+    background-position: center;
+  }
+
+  .title {
+    font-size: 2.7rem;
+    text-shadow: 2px 3px 10px #333;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .btn-second {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* about section */
+
+  .image-container img {
+    width: 85%;
+  }
+
+  .image-container .img-2 {
+    margin-top: -3rem;
+  }
+
+  .about h1 {
+    line-height: 1.3em;
+  }
+
+  /* class section */
+
+  .image-class-container {
+    flex-basis: 100%;
+  }
+}
