@@ -532,6 +532,12 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  height: 0;
+  margin: auto;
+}
+
 .carousel button i {
   font-size: 1rem;
   background-color: #18de18;
@@ -539,6 +545,87 @@ body {
   width: max-content;
   border-radius: 50%;
   padding: 0.7rem;
+}
+
+/* membership section */
+
+.member {
+  background: linear-gradient(90deg, #000000, rgba(51, 51, 51, 0)),
+    url(../img/testi.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member .title {
+  font-size: 2.5rem;
+}
+
+.member .btn-primary {
+  width: max-content;
+}
+
+/* footer */
+
+footer {
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.6rem;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+footer .social-media a:hover {
+  background-color: #18de18;
+  border: 2px solid #18de18;
+  transition: 0.3s ease-in-out;
+}
+
+footer .nav-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+footer li {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+footer .nav-link {
+  width: max-content;
+}
+
+footer .nav-link:hover {
+  color: #c7c7c7;
+}
+
+footer li i {
+  font-size: 1.1rem;
+}
+
+footer .navbar-brand {
+  font-size: 2rem;
+}
+
+.copyright {
+  border-top: 1px solid #fff;
 }
 
 /* responsive desktop */
@@ -562,6 +649,16 @@ body {
   }
 
   .about li {
+    font-size: 1rem;
+  }
+
+  /* testimonial section */
+
+  .carousel-item {
+    padding: 2rem 10rem;
+  }
+
+  .carousel-item .text-content {
     font-size: 1rem;
   }
 }
@@ -650,6 +747,13 @@ body {
   .schedule-item {
     padding: 1rem 1.5rem;
   }
+
+  /* testimonial section */
+
+  .carousel-item {
+    padding: 2rem 4rem;
+    color: #fff;
+  }
 }
 
 /* responsive mobile */
@@ -690,5 +794,31 @@ body {
 
   .image-class-container {
     flex-basis: 100%;
+  }
+
+  /* testimonial section */
+  .carousel-item {
+    padding: 1rem;
+  }
+
+  /* membership */
+
+  .member .title {
+    font-size: 2rem;
+  }
+
+  /* footer  */
+
+  footer .nav-link {
+    width: 100%;
+  }
+
+  footer li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  footer li i {
+    font-size: 1.2rem;
   }
 }
