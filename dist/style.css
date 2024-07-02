@@ -556,7 +556,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 50vh;
+  min-height: 50vh;
+  padding: 2rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
