@@ -4,9 +4,15 @@
   .container-fluid {
     padding-left: 1.4rem;
     padding-right: 1.4rem;
+    overflow-x: hidden;
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary);
