@@ -4,13 +4,22 @@
   .container-fluid {
     padding-left: 1.4rem;
     padding-right: 1.4rem;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 
 * {
   box-sizing: border-box;
 }
+
+/* animation */
+.animate__delay-0-2s {
+  animation-delay: 0.2s;
+}
+.animate__delay-0-4s {
+  animation-delay: 0.4s;
+}
+/* end animation */
 
 html,
 body {

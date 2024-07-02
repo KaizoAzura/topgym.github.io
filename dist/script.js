@@ -1,3 +1,4 @@
+// navbar
 document.addEventListener("DOMContentLoaded", function () {
   const navbar = document.querySelector(".navbar");
   const sections = document.querySelectorAll("#abt, #schd, #prc");
@@ -21,3 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+
+// website refresh
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+window.scrollTo(0, 0);

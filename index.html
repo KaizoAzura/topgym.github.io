@@ -34,6 +34,17 @@
       rel="stylesheet"
     />
     <!-- end link icon -->
+
+    <!-- animated link -->
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- end animated link -->
   </head>
   <body>
     <!-- navbar -->
@@ -108,18 +119,22 @@
     <div class="container-fluid hero d-flex align-items-center">
       <div class="row">
         <div class="col-lg-6 col-md-8">
-          <h1 class="title">
+          <h1 class="title animate__animated animate__fadeInLeft">
             REFRESH YOUR ROUTINE SHAPE YOUR <span>FITNESS</span>
           </h1>
-          <p class="text my-4">
+          <p
+            class="text my-4 animate__animated animate__fadeInLeft animate__delay-0-2s"
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
             consequatur atque totam, impedit temporibus provident.
           </p>
-          <div class="row">
+          <div
+            class="row animate__animated animate__fadeInLeft animate__delay-0-4s"
+          >
             <div class="col-sm-4 col-12">
               <a href="#" class="btn-primary btn">Join Now</a>
             </div>
-            <div class="col-12 col-sm-6">
+            <div data-aos="fade-up" class="col-12 col-sm-6">
               <a href="#" class="btn-second btn"
                 ><i class="fa-solid fa-circle-play me-2"></i>Watch Video</a
               >
@@ -133,20 +148,34 @@
     <!-- about section -->
     <div class="container-fluid about d-flex align-items-center" id="abt">
       <div class="row">
-        <div class="col-md-6 image-container">
-          <div class="col-12 text-start img-1">
+        <div class="col-md-6 image-container" data-aos="fade-up">
+          <div
+            class="col-12 text-start img-1"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img src="img/about-1.jpg" alt="about image" />
           </div>
-          <div class="col-12 text-end img-2">
+          <div
+            class="col-12 text-end img-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img src="img/about-2.jpg" alt="about image" />
           </div>
-          <div class="col-12 text-start img-3 d-none d-lg-inline">
+          <div
+            class="col-12 text-start img-3 d-none d-lg-inline"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img src="img/about-3.jpg" alt="about image" />
           </div>
         </div>
         <div class="col-md-6 p-lg-5">
-          <h1 class="title my-3">Respect Your Body it's your Greates Asset</h1>
-          <ul>
+          <h1 class="title my-3" data-aos="fade-up">
+            Respect Your Body it's your Greates Asset
+          </h1>
+          <ul data-aos="fade-up" data-aos-delay="100">
             <li class="nav-item">
               <i class="ri-checkbox-circle-fill me-2"></i>Icrease your muscle
               strenght
@@ -159,11 +188,14 @@
               <i class="ri-checkbox-circle-fill me-2"></i>Increase Stamina
             </li>
           </ul>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-12 col-lg-6">
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div data-aos="fade-up" class="col-12 col-sm-6 col-md-12 col-lg-6">
               <a href="#" class="btn-primary btn">Join Now</a>
             </div>
-            <div class="col-12 col-sm-6 col-md-12 col-lg-6 mt-md-3 mt-lg-0">
+            <div
+              data-aos="fade-up"
+              class="col-12 col-sm-6 col-md-12 col-lg-6 mt-md-3 mt-lg-0"
+            >
               <a href="#" class="btn-second btn">Contact Us</a>
             </div>
           </div>
@@ -179,10 +211,14 @@
       <!-- heading class -->
       <div class="row">
         <div class="col-12 text-center text-md-start">
-          <h5 class="subheading mb-4">OUR CLASSES</h5>
+          <h5 class="subheading mb-4" data-aos="fade-up">OUR CLASSES</h5>
         </div>
       </div>
-      <div class="row d-flex align-items-center mb-4">
+      <div
+        class="row d-flex align-items-center mb-4"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <div class="col-12 text-center text-md-start col-md-6">
           <h1 class="title">Personalized Fitness class for Every Goal</h1>
         </div>
@@ -193,7 +229,7 @@
       <!-- end heading class -->
 
       <div class="row img-container">
-        <div class="image-class-container mt-3 mt-lg-0">
+        <div class="image-class-container mt-3 mt-lg-0" data-aos="fade-up">
           <img src="img/class-1.jpg" alt="Image class 1" />
           <div class="overlay">
             <div class="text-class">
@@ -206,7 +242,11 @@
             </div>
           </div>
         </div>
-        <div class="image-class-container mt-3 mt-lg-0">
+        <div
+          class="image-class-container mt-3 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <img src="img/class-2.jpg" alt="Image class 2" />
           <div class="overlay">
             <div class="text-class">
@@ -219,7 +259,11 @@
             </div>
           </div>
         </div>
-        <div class="image-class-container mt-3 mt-lg-0">
+        <div
+          class="image-class-container mt-3 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <img src="img/class-3.jpg" alt="Image class 3" />
           <div class="overlay">
             <div class="text-class">
@@ -232,7 +276,11 @@
             </div>
           </div>
         </div>
-        <div class="image-class-container mt-3 mt-lg-0">
+        <div
+          class="image-class-container mt-3 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <img src="img/class-4.jpg" alt="Image class 4" />
           <div class="overlay">
             <div class="text-class">
@@ -253,8 +301,10 @@
     <div class="container-fluid schedule mt-5" id="schd">
       <div class="row">
         <div class="col-12 text-center">
-          <h5 class="subheading mb-4">CLASS SCHEDULE</h5>
-          <h1 class="title mb-5">Weekly Class Schedule</h1>
+          <h5 class="subheading mb-4" data-aos="fade-up">CLASS SCHEDULE</h5>
+          <h1 class="title mb-5" data-aos="fade-up" data-aos-delay="100">
+            Weekly Class Schedule
+          </h1>
         </div>
       </div>
       <!-- table section -->
@@ -276,14 +326,14 @@
             <tr>
               <td class="time-col">09:00 AM</td>
               <td class="day-col">
-                <div class="schedule-item fitness">
+                <div data-aos="zoom-in" class="schedule-item fitness">
                   <h5>Albert Flores</h5>
                   <p>Fitness</p>
                 </div>
               </td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item nutrition">
+                <div data-aos="zoom-in" class="schedule-item nutrition">
                   <h5>Esther Howard</h5>
                   <p>Nutrition</p>
                 </div>
@@ -292,7 +342,7 @@
               <td class="day-col"></td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item physique">
+                <div data-aos="zoom-in" class="schedule-item physique">
                   <h5>Cody Fisher</h5>
                   <p>Physique</p>
                 </div>
@@ -302,21 +352,21 @@
               <td class="time-col">11:00 AM</td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item nutrition">
+                <div data-aos="zoom-in" class="schedule-item nutrition">
                   <h5>Jenny Wilson</h5>
                   <p>Nutrition</p>
                 </div>
               </td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item physique">
+                <div data-aos="zoom-in" class="schedule-item physique">
                   <h5>Cody Fisher</h5>
                   <p>Physique</p>
                 </div>
               </td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item fitness">
+                <div data-aos="zoom-in" class="schedule-item fitness">
                   <h5>Ronald Richards</h5>
                   <p>Fitness</p>
                 </div>
@@ -330,7 +380,7 @@
               <td class="day-col"></td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item strength-core">
+                <div data-aos="zoom-in" class="schedule-item strength-core">
                   <h5>Lily Woods</h5>
                   <p>Strenght Core</p>
                 </div>
@@ -341,28 +391,28 @@
             <tr>
               <td class="time-col">05:00 PM</td>
               <td class="day-col">
-                <div class="schedule-item fitness">
+                <div data-aos="zoom-in" class="schedule-item fitness">
                   <h5>Albert Flores</h5>
                   <p>Fitness</p>
                 </div>
               </td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item nutrition">
+                <div data-aos="zoom-in" class="schedule-item nutrition">
                   <h5>Jenny Wilson</h5>
                   <p>Nutrition</p>
                 </div>
               </td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item physique">
+                <div data-aos="zoom-in" class="schedule-item physique">
                   <h5>Cody Fisher</h5>
                   <p>Physique</p>
                 </div>
               </td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item nutrition">
+                <div data-aos="zoom-in" class="schedule-item nutrition">
                   <h5>Esther Howard</h5>
                   <p>Nutrition</p>
                 </div>
@@ -374,14 +424,14 @@
               <td class="day-col"></td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item strength-core">
+                <div data-aos="zoom-in" class="schedule-item strength-core">
                   <h5>Lily Woods</h5>
                   <p>Strenght Core</p>
                 </div>
               </td>
               <td class="day-col"></td>
               <td class="day-col">
-                <div class="schedule-item fitness">
+                <div data-aos="zoom-in" class="schedule-item fitness">
                   <h5>Ronald Richards</h5>
                   <p>Fitness</p>
                 </div>
@@ -399,13 +449,15 @@
     <div class="container-fluid trainer">
       <div class="row">
         <div class="col-12 text-center">
-          <h5 class="subheading mb-4">OUR TRAINER</h5>
-          <h1 class="title mb-5">Meet Our Trainers</h1>
+          <h5 class="subheading mb-4" data-aos="fade-up">OUR TRAINER</h5>
+          <h1 class="title mb-5" data-aos="fade-up" data-aos-delay="100">
+            Meet Our Trainers
+          </h1>
         </div>
       </div>
 
       <div class="row trainer-card-container">
-        <div class="col-12 col-sm-6 col-lg-3 px-3">
+        <div data-aos="fade-up" class="col-12 col-sm-6 col-lg-3 px-3">
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -430,7 +482,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-0">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-0"
+        >
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -455,7 +511,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3 mt-lg-0">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3 mt-lg-0"
+        >
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -480,7 +540,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3 mt-lg-0">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3 mt-lg-0"
+        >
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -505,7 +569,10 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3">
+        <div
+          data-aos="fade-up"
+          class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3"
+        >
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -530,7 +597,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3"
+        >
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -555,7 +626,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3"
+        >
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -580,7 +655,11 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="col-12 col-sm-6 col-lg-3 px-3 mt-3 mt-sm-3"
+        >
           <div class="card">
             <img src="img/trainer-1.jpg" class="card-img-top" alt="..." />
             <div class="card-body text-center">
@@ -613,8 +692,10 @@
     <div class="container-fluid pricing" id="prc">
       <div class="row">
         <div class="col-12 text-center">
-          <h5 class="subheading mb-4">PRICING</h5>
-          <h1 class="title mb-5">Affordable Pricing Price</h1>
+          <h5 class="subheading mb-4" data-aos="fade-up">PRICING</h5>
+          <h1 class="title mb-5" data-aos="fade-up" data-aos-delay="100">
+            Affordable Pricing Price
+          </h1>
         </div>
       </div>
       <!-- price planning -->
@@ -624,8 +705,14 @@
             class="nav nav-pills mx-auto d-flex align-items-center justify-content-center"
             id="myTab"
             role="tablist"
+            data-aos="fade-up"
           >
-            <li class="nav-item" role="presentation">
+            <li
+              class="nav-item"
+              role="presentation"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <button
                 class="nav-link active"
                 id="Montly-tab"
@@ -639,7 +726,12 @@
                 Billed Montly
               </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li
+              class="nav-item"
+              role="presentation"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <button
                 class="nav-link"
                 id="Yearly-tab"
@@ -670,7 +762,11 @@
               <div class="row d-flex justify-content-center">
                 <!-- first price -->
                 <div class="col-md-6 col-lg-4 px-4 py-2 px-md-2">
-                  <div class="card mb-3">
+                  <div
+                    class="card mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
                     <div class="card-body">
                       <h5 class="card-title">Basic Package</h5>
                       <h3 class="price mt-3">$25</h3>
@@ -707,7 +803,7 @@
                 </div>
                 <!-- second price -->
                 <div class="col-md-6 col-lg-4 px-4 py-2 px-md-2">
-                  <div class="card mb-3">
+                  <div class="card mb-3" data-aos="fade-up">
                     <div class="card-body">
                       <h5 class="card-title">Mid Package</h5>
                       <h3 class="price mt-3">$55</h3>
@@ -744,7 +840,11 @@
                 </div>
                 <!-- third price -->
                 <div class="col-md-6 col-lg-4 px-4 py-2 px-md-2">
-                  <div class="card mb-3">
+                  <div
+                    class="card mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
                     <div class="card-body">
                       <h5 class="card-title">Pro Package</h5>
                       <h3 class="price mt-3">$75</h3>
@@ -790,7 +890,11 @@
               <div class="row d-flex justify-content-center">
                 <!-- first price -->
                 <div class="col-md-6 col-lg-4 px-4 py-2 px-md-2">
-                  <div class="card mb-3">
+                  <div
+                    class="card mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
                     <div class="card-body">
                       <h5 class="card-title">Basic Package</h5>
                       <h3 class="price mt-3">$250</h3>
@@ -827,7 +931,7 @@
                 </div>
                 <!-- second price -->
                 <div class="col-md-6 col-lg-4 px-4 py-2 px-md-2">
-                  <div class="card mb-3">
+                  <div class="card mb-3" data-aos="fade-up">
                     <div class="card-body">
                       <h5 class="card-title">Mid Package</h5>
                       <h3 class="price mt-3">$550</h3>
@@ -864,7 +968,11 @@
                 </div>
                 <!-- third price -->
                 <div class="col-md-6 col-lg-4 px-4 py-2 px-md-2">
-                  <div class="card mb-3">
+                  <div
+                    class="card mb-3"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
                     <div class="card-body">
                       <h5 class="card-title">Pro Package</h5>
                       <h3 class="price mt-3">$750</h3>
@@ -914,12 +1022,14 @@
     >
       <div class="row">
         <div class="col-12 text-center text-md-start">
-          <h5 class="subheading mb-4">TESTIMONIALS</h5>
-          <h1 class="title">What Say About Our Clients</h1>
+          <h5 class="subheading mb-4" data-aos="fade-up">TESTIMONIALS</h5>
+          <h1 class="title" data-aos="fade-up" data-aos-delay="100">
+            What Say About Our Clients
+          </h1>
         </div>
       </div>
       <!-- slider testimonial -->
-      <div class="row mt-3">
+      <div class="row mt-3" data-aos="fade-up" data-aos-delay="200">
         <div class="col-12">
           <div id="carouselExample" class="carousel slide carousel-fade">
             <div class="carousel-inner">
@@ -1061,8 +1171,16 @@
     <div class="container-fluid member p-2">
       <div class="row">
         <div class="col-12 text-center">
-          <h1 class="title mb-4">Get A Free Consultancy<br />Rigth Now Here</h1>
-          <a href="#" class="btn-primary btn">Join Membership</a>
+          <h1 class="title mb-4" data-aos="zoom-in">
+            Get A Free Consultancy<br />Rigth Now Here
+          </h1>
+          <a
+            href="#"
+            class="btn-primary btn"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            >Join Membership</a
+          >
         </div>
       </div>
     </div>
@@ -1146,5 +1264,11 @@
     <!-- link js -->
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="dist/script.js"></script>
+
+    <!-- AOS -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- end AOS -->
   </body>
 </html>
